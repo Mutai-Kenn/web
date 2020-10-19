@@ -1,0 +1,19 @@
+{
+  "name": "olkejuado",
+  "version": "1.0.0",
+  "description": "web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mutai-Kenn/web.git"
+  },
+  "author": "kenn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mutai-Kenn/web/issues"
+  },
+  "homepage": "https://github.com/Mutai-Kenn/web#readme"
+}
