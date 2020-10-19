@@ -1,0 +1,502 @@
+// Import Styles
+@import "./config";
+@import "./menu";
+
+// General Styles
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: gainsboro;
+  background-size: cover;
+  color: $text-Color;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+.logo {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  img {
+    height: 10rem;
+    width: 10rem;
+  }
+}
+
+// Header Section
+header {
+  background-color: white;
+
+  .nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    border: 1px solid gray;
+    .menu-list {
+      display: flex;
+      list-style: none;
+      text-transform: capitalize;
+
+      .menu-item {
+        a {
+          text-decoration: none;
+          font-size: 1.2rem;
+          font-weight: 500;
+          padding: 0 1.5rem;
+        }
+      }
+    }
+  }
+}
+.sticky {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
+
+// Home Main Section
+#home {
+  .showcase {
+    width: 100vw;
+    margin: auto;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/background-kili.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    h1,
+    h2 {
+      text-transform: capitalize;
+      padding: 1rem;
+      // font-weight: 500;
+    }
+  }
+
+  .sectionfirst {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    min-height: 30rem;
+
+    h2 {
+      width: 80vw;
+      margin: auto;
+      padding: 1rem;
+      text-align: center;
+      text-transform: capitalize;
+      font-weight: 500;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      width: 80vw;
+      margin: auto;
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 1rem;
+      text-align: center;
+      border: 1px solid red;
+      margin: 1rem 0.5rem;
+      border-radius: 10px;
+
+      i {
+        font-size: 3rem;
+        color: blue;
+        padding: 1rem 0;
+      }
+
+      h3 {
+        text-transform: capitalize;
+        padding: 1rem;
+        font-weight: 500;
+      }
+      p {
+        line-height: 1.5;
+      }
+    }
+  }
+
+  .sectionsecond {
+    // background-color: gray;
+    background-image: url("../images/lion.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    .container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      width: 80vw;
+      margin: auto;
+      .card {
+        padding: 2rem 1rem;
+        font-weight: 600;
+        text-align: center;
+        text-transform: capitalize;
+        margin: 1rem 0.5rem;
+        h3,
+        i {
+          font-size: 3rem;
+          padding: 1rem;
+        }
+      }
+    }
+  }
+}
+// Showcase Section
+.showcase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 30vh;
+  width: 100vw;
+  background-image: url("../images/tribe.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  h1 {
+    text-transform: capitalize;
+    padding: 0 0 1rem 0;
+  }
+  h2 {
+    text-transform: capitalize;
+  }
+}
+// About Main Section
+#about {
+  color: black;
+  .content {
+    height: 100vh;
+    .container {
+      width: 80vw;
+      margin: auto;
+      padding: 3rem 0;
+
+      .card {
+        border: 1px solid red;
+        border-radius: 10px;
+        text-align: center;
+        line-height: 1.5;
+
+        h2 {
+          text-transform: capitalize;
+          padding: 1rem 0;
+        }
+      }
+    }
+  }
+}
+// Project Main Section
+#projects {
+  .content {
+    h2 {
+      text-transform: capitalize;
+      color: black;
+      text-align: center;
+      padding: 1rem;
+    }
+    .container {
+      width: 80vw;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      .project-name {
+        border: rgb(184, 182, 182) 1px solid;
+        margin: 1rem;
+        border-radius: 4px;
+        color: black;
+
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 4px 4px 0 0;
+        }
+
+        h2 {
+          text-transform: capitalize;
+          margin-left: 1rem;
+        }
+        p {
+          line-height: 1.5;
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}
+// Events Main Section
+#events {
+  .content {
+    h2 {
+      text-transform: capitalize;
+      color: black;
+      text-align: center;
+      padding: 1rem;
+    }
+    .container {
+      width: 80vw;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      .project-name {
+        border: rgb(184, 182, 182) 1px solid;
+        margin: 1rem;
+        border-radius: 4px;
+        color: black;
+
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 4px 4px 0 0;
+        }
+
+        h2,
+        h3 {
+          text-transform: capitalize;
+          margin-left: 1rem;
+        }
+        p {
+          line-height: 1.5;
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}
+// Blog Main Section
+#blog {
+  .content {
+    h2 {
+      text-transform: capitalize;
+      color: black;
+      text-align: center;
+      padding: 1rem;
+    }
+    .container {
+      width: 80vw;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+
+      .project-name {
+        border: rgb(184, 182, 182) 1px solid;
+        margin: 1rem;
+        border-radius: 4px;
+        color: black;
+
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 4px 4px 0 0;
+        }
+
+        h2 {
+          text-transform: capitalize;
+          margin-left: 1rem;
+        }
+        h6 {
+          text-transform: capitalize;
+          margin-left: 1rem;
+        }
+        p {
+          line-height: 1.5;
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}
+// Contact Main Section
+#contact {
+  .content {
+    h2 {
+      text-transform: capitalize;
+      color: black;
+      text-align: center;
+      padding: 1rem;
+    }
+    .container {
+      width: 80vw;
+      margin: auto;
+      padding: 1rem;
+      background-color: #f2f2f2;
+      color: black;
+      border-radius: 10px;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 0.9rem;
+        border-radius: 4px;
+        resize: vertical;
+        margin: 0.5rem 0 1rem 0;
+      }
+      .btn {
+        background-color: blue;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
+// Donate Main Section
+#donate {
+  .showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 30vh;
+    width: 100vw;
+    background-image: url("../images/donate.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    h1 {
+      text-transform: capitalize;
+      padding: 0 0 1rem 0;
+    }
+    h2 {
+      text-transform: capitalize;
+    }
+  }
+  .content {
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      width: 80vw;
+      margin: auto;
+      padding: 3rem 0;
+      color: black;
+      .card {
+        text-align: center;
+        border-radius: 4px;
+        line-height: 1.5;
+        border: 1px solid red;
+        margin: 1rem;
+
+        .level {
+          background-color: blue;
+          border-radius: 4px 4px 0 0;
+
+          h1 {
+            text-transform: capitalize;
+            color: $text-Color;
+            letter-spacing: 2px;
+          }
+        }
+        .amount {
+          padding: 1rem;
+          text-transform: capitalize;
+          background-color: rgb(184, 182, 182);
+          h2 {
+            color: lightgreen;
+          }
+        }
+        .donate-content {
+          border-top: 1px solid blue;
+          padding: 1rem;
+          p {
+            margin: 1rem;
+          }
+        }
+        .donate-btn {
+          padding: 1rem;
+          border-top: 1px solid blue;
+          .btn {
+            border: red;
+            outline: 0;
+            background-color: blue;
+            text-transform: capitalize;
+            color: $text-Color;
+            font-weight: 600;
+            padding: 0.5rem 2.5rem;
+            border-radius: 10px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Section Join the Community
+.join {
+  background-color: blue;
+  .container {
+    width: 80vw;
+    height: 6rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      text-transform: capitalize;
+      font-weight: 400;
+      margin: 1rem;
+    }
+    button {
+      border-radius: 10px;
+      font-size: 1rem;
+      padding: 0.5rem 1.5rem;
+      border: none;
+      outline: 0;
+      border: none;
+    }
+  }
+}
+
+// Footer Section
+footer {
+  height: 11rem;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+
+  .container {
+    display: grid;
+    width: 80vw;
+    margin: auto;
+
+    h2 {
+      text-transform: capitalize;
+      font-weight: 700;
+      text-align: center;
+      margin: 1rem;
+    }
+    .social,
+    p {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 1rem;
+      i {
+        font-size: 2rem;
+      }
+    }
+    p {
+      font-weight: 100;
+    }
+  }
+}
