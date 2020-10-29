@@ -364,8 +364,8 @@ header .nav-menu .menu-list .menu-item a {
   position: absolute;
   top: 50%;
   color: #fffaf0;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 0.8rem;
+  background: rgba(30, 144, 255, 0.7);
+  padding: 0.5rem;
   width: 90%;
 }
 
@@ -422,7 +422,6 @@ header .nav-menu .menu-list .menu-item a {
   text-transform: capitalize;
   text-align: center;
   padding: 1rem;
-  color: black;
 }
 
 #blog .content .container {
@@ -430,34 +429,77 @@ header .nav-menu .menu-list .menu-item a {
   margin: auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 1fr;
-      grid-template-columns: 2fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  padding-top: 1rem;
 }
 
-#blog .content .container .project-name {
-  border: #b8b6b6 1px solid;
+#blog .content .container .latest {
+  border-right: 1px solid grey;
+}
+
+#blog .content .container .latest .news {
   margin: 1rem;
-  border-radius: 4px;
+}
+
+#blog .content .container .latest .news a {
+  text-decoration: none;
   color: black;
 }
 
-#blog .content .container .project-name img {
+#blog .content .container .latest .news img {
   width: 100%;
   height: auto;
-  border-radius: 4px 4px 0 0;
 }
 
-#blog .content .container .project-name h2 {
+#blog .content .container .latest .news h2 {
+  text-transform: capitalize;
+}
+
+#blog .content .container .latest .news h6 {
+  text-transform: capitalize;
+}
+
+#blog .content .container .latest .news h4 {
+  line-height: 1.5;
+}
+
+#blog .content .archives h3 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#blog .content .archives .news-archives {
+  margin: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: grey 1px solid;
+}
+
+#blog .content .archives .news-archives a {
+  text-decoration: none;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#blog .content .archives .news-archives img {
+  width: 50%;
+  height: auto;
+}
+
+#blog .content .archives .news-archives h2,
+#blog .content .archives .news-archives h6 {
   text-transform: capitalize;
   margin-left: 1rem;
 }
 
-#blog .content .container .project-name h6 {
-  text-transform: capitalize;
+#blog .content .archives .news-archives p {
   margin-left: 1rem;
+  padding-bottom: 0.5rem;
 }
 
-#blog .content .container .project-name p {
+#blog .content .archives .news-archives h4 {
   line-height: 1.5;
   margin-left: 1rem;
 }
@@ -472,11 +514,42 @@ header .nav-menu .menu-list .menu-item a {
   width: 80vw;
   margin: auto;
   padding: 1rem;
-  background-color: #f2f2f2;
-  color: black;
   border-radius: 10px;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+#contact .content .container .contact-info .info {
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contact .content .container .contact-info .info ul {
+  list-style: none;
+}
+
+#contact .content .container .contact-info .info ul li {
+  padding: 1rem 0 1rem 0;
+  line-height: 1.5;
+}
+
+#contact .content .container .contact-info .info ul li span {
+  font-size: xx-large;
+  padding-right: 0.5rem;
+  color: #1e90ff;
 }
 
 #contact .content .container input,
@@ -498,7 +571,7 @@ header .nav-menu .menu-list .menu-item a {
 
 #contact .content .container .btn:hover {
   color: #fffaf0;
-  background-color: #007cf4;
+  background-color: #0079ef;
 }
 
 #donate .showcase {

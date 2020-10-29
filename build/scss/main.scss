@@ -291,8 +291,8 @@ header {
           position: absolute;
           top: 50%;
           color: $text-Color;
-          background: rgba(0, 0, 0, 0.5);
-          padding: 0.8rem;
+          background: rgba($primary-Color, 0.7);
+          padding: 0.5rem;
           width: 90%;
         }
         p {
@@ -354,35 +354,69 @@ header {
       text-transform: capitalize;
       text-align: center;
       padding: 1rem;
-      color: black;
     }
     .container {
       width: 80vw;
       margin: auto;
       display: grid;
-      grid-template-columns: 2fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      padding-top: 1rem;
 
-      .project-name {
-        border: rgb(184, 182, 182) 1px solid;
+      .latest {
+        border-right: 1px solid $border-Color;
+        .news {
+          margin: 1rem;
+
+          a {
+            text-decoration: none;
+            color: $dark-Color;
+          }
+          img {
+            width: 100%;
+            height: auto;
+          }
+
+          h2 {
+            text-transform: capitalize;
+          }
+          h6 {
+            text-transform: capitalize;
+          }
+          h4 {
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+    .archives {
+      h3 {
+        text-align: center;
+        text-transform: capitalize;
+      }
+      .news-archives {
         margin: 1rem;
-        border-radius: 4px;
-        color: black;
-
+        padding-bottom: 0.5rem;
+        border-bottom: $border-Color 1px solid;
+        a {
+          text-decoration: none;
+          color: $dark-Color;
+          display: flex;
+        }
         img {
-          width: 100%;
+          width: 50%;
           height: auto;
-          border-radius: 4px 4px 0 0;
         }
 
-        h2 {
-          text-transform: capitalize;
-          margin-left: 1rem;
-        }
+        h2,
         h6 {
           text-transform: capitalize;
           margin-left: 1rem;
         }
         p {
+          margin-left: 1rem;
+          padding-bottom: 0.5rem;
+        }
+        h4 {
           line-height: 1.5;
           margin-left: 1rem;
         }
@@ -390,6 +424,7 @@ header {
     }
   }
 }
+
 // Contact Main Section
 #contact {
   .content {
@@ -402,11 +437,33 @@ header {
       width: 80vw;
       margin: auto;
       padding: 1rem;
-      background-color: #f2f2f2;
-      color: black;
       border-radius: 10px;
       margin-top: 0.5rem;
       margin-bottom: 0.5rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      .contact-info {
+        .info {
+          height: 70%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          ul {
+            list-style: none;
+            li {
+              padding: 1rem 0 1rem 0;
+              line-height: 1.5;
+
+              span {
+                font-size: xx-large;
+                padding-right: 0.5rem;
+                color: $primary-Color;
+              }
+            }
+          }
+        }
+      }
       input,
       select,
       textarea {
@@ -424,7 +481,7 @@ header {
 
         &:hover {
           color: $text-Color;
-          background-color: darken($color: $primary-Color, $amount: 8);
+          background-color: darken($color: $primary-Color, $amount: 9);
         }
       }
     }
