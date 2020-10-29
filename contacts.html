@@ -55,25 +55,27 @@
     <!-- Main Content Section -->
     <main id="contact">
       <div class="content">
-        <h2>send us a message</h2>
         <div class="container">
+          <div class="contact-info">
+            <h2>Get in touch with the contact details below</h2>
+            <div class="info">
+              <ul>
+                <li><span class="fas fa-phone-square fa-lg"></span> +123 2345644</li>
+                <li><span class="fab fa-whatsapp-square fa-lg"></span> +123 2345644</li>
+                <li><span class="fas fa-envelope-square fa-lg"></span> olkejuado@info.org</li>
+              </ul>
+            </div>
+          </div>
           <form action="#">
-        
+            <h2>send us a message</h2>
             <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
         
             <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        
-            <label for="country">Country</label>
-            <select id="country" name="country">
-              <option value="australia">Australia</option>
-              <option value="canada">Canada</option>
-              <option value="usa">USA</option>
-            </select>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
         
             <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
         
             <input type="submit" value="Submit" class="btn">
         
