@@ -12,12 +12,13 @@
 body {
   background-color: white;
   background-size: cover;
+  // font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat";
+  font-size: 14px;
 
-  font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
 }
 .logo {
-  background-color: white;
   display: flex;
   justify-content: center;
   padding: 0.5rem;
@@ -384,6 +385,7 @@ header {
           }
           h4 {
             line-height: 1.5;
+            padding: 0.5rem 0;
           }
         }
       }
@@ -414,7 +416,7 @@ header {
         }
         p {
           margin-left: 1rem;
-          padding-bottom: 0.5rem;
+          padding: 0.5rem 0;
         }
         h4 {
           line-height: 1.5;
@@ -424,7 +426,6 @@ header {
     }
   }
 }
-
 // Contact Main Section
 #contact {
   .content {
@@ -469,7 +470,6 @@ header {
       textarea {
         width: 100%;
         padding: 0.9rem;
-        border-radius: 4px;
         resize: vertical;
         margin: 0.5rem 0 1rem 0;
       }
@@ -567,7 +567,6 @@ header {
     }
   }
 }
-
 // Section Join the Community
 .join {
   background-color: $primary-Color;
@@ -595,11 +594,11 @@ header {
       &:hover {
         color: $text-Color;
         background-color: darken($color: $primary-Color, $amount: 8);
+        transition-duration: 0.7s;
       }
     }
   }
 }
-
 // Footer Section
 footer {
   height: 11rem;
