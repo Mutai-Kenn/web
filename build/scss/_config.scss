@@ -1,6 +1,25 @@
 // Colors
-$primary-Color: #1e90ff;
+$primary-Color: blue;
 $secondary-Color: red;
 $text-Color: #fffaf0;
 $dark-Color: black;
 $border-Color: grey;
+
+// Media Query
+
+// @media screen and (max-width: 500px) {
+//   #myHeader {
+//     display: none;
+//   }
+// }
+
+// @mixin mediaMd {
+//   @media screen and (max-width: 768px) {
+//     @content;
+//   }
+// }
+// @mixin mediaLg {
+//   @media screen and (min-width: 769px) {
+//     @content;
+//   }
+// }

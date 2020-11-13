@@ -1,0 +1,15 @@
+// WideScreens
+@include mediaXl {
+}
+// Desktop and
+@include mediaLg {
+}
+// Tablet and small
+@include mediaMd {
+}
+// Smartphones
+@include mediaSm {
+  .myHeader {
+    display: none;
+  }
+}
